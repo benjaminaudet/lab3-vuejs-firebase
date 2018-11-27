@@ -65,3 +65,8 @@ Open repository: /home/benjamin/Projets/phone-testing-center-vuejs
 > git check-ignore -z --stdin
 > git check-ignore -z --stdin
 > git check-ignore -z --stdin
+> git show :.gitignore
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :.gitignore
