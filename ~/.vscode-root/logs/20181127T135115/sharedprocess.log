@@ -1,0 +1,49 @@
+[2018-11-27 13:51:18.707] [sharedprocess] [info] main {"machineId":"58e75417497792fe56a43d0a2f5e4a4fc9e704d1a802a74678fd9934962daf43"}
+[2018-11-27 13:51:18.759] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:18.776] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:18.781] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:18.782] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:18.799] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:20.661] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-27 13:51:20.674] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-27 13:51:20.676] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-27 13:51:20.751] [sharedprocess] [info] Deleted from disk octref.vetur-0.14.0
+[2018-11-27 13:51:20.751] [sharedprocess] [info] Deleted from disk octref.vetur-0.13.0
+[2018-11-27 13:51:22.123] [sharedprocess] [info] Installing extension: vetur
+[2018-11-27 13:51:22.135] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:31.768] [sharedprocess] [info] Downloaded extension: vetur /tmp/f43581fa-b132-4f43-895c-e8fedc67ad6b
+[2018-11-27 13:51:43.195] [sharedprocess] [info] Extracted extension to /home/benjamin/.vscode/extensions/.octref.vetur-0.14.2: octref.vetur-0.14.2
+[2018-11-27 13:51:43.195] [sharedprocess] [info] Renamed to /home/benjamin/.vscode/extensions/octref.vetur-0.14.2
+[2018-11-27 13:51:43.195] [sharedprocess] [info] Installation completed. octref.vetur-0.14.2
+[2018-11-27 13:51:43.510] [sharedprocess] [info] Extensions installed successfully: octref.vetur
+[2018-11-27 13:51:43.635] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:43.660] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-27 13:51:45.139] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:45.142] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:45.145] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:45.230] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-27 13:51:45.233] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-27 13:51:45.349] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:51:58.710] [sharedprocess] [info] Starting to clean up unused language packs.
+[2018-11-27 13:56:07.567] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 13:56:07.620] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-27 13:56:45.390] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:01:45.399] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:06:45.412] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:11:45.419] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:16:45.432] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:21:45.446] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:26:45.459] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:31:45.469] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:36:45.489] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:41:45.503] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:46:45.519] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:51:45.607] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 14:56:45.620] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 15:01:45.645] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 15:06:45.748] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 15:11:45.802] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 15:16:45.843] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 15:21:45.851] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 15:26:45.865] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-27 15:31:45.896] [sharedprocess] [info] Scanned user extensions: 2
