@@ -2,7 +2,7 @@ export default [
   {
     label: 'Sign In',
     icon: 'home',
-    url: '/#',
+    url: '/signin',
     auth: false
   },
   {

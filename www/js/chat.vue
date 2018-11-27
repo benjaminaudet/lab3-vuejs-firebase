@@ -7,6 +7,7 @@
           v-bind:username="message.username"
           v-bind:email="message.email"
           v-bind:message="message.message"
+          v-bind:id="message.id"
         ></message>
       </ul>
       <form action="#">
@@ -34,22 +35,13 @@
     },
     created: function() {
       let db = firebase.firestore();
-
-      this.$nextTick(function() {
-        let messagesGlobal = this.messages;
-        db.collection("messages").orderBy('posted_at')
-          .get().then(function(querySnapshot) {
-            querySnapshot.forEach(function(doc) {
-              messagesGlobal.push(doc.data());
-            });
-          });
-      })
+      
       this.snapshot = db.collection("messages").orderBy('posted_at')
         .onSnapshot(_.bind(function(querySnapshot) {
           this.messages = [];
           let messagesGlobal = this.messages;
           querySnapshot.forEach(function(doc) {
-            messagesGlobal.push(doc.data());
+            messagesGlobal.push({...doc.data(), id: doc.id});
           });
         }, this));
     },

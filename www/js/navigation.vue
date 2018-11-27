@@ -10,10 +10,14 @@
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Pages</span>
             <nav class="mdl-navigation">
-                <router-link v-on:click.native="signOut() && close()" to="/#" class="mdl-navigation__link mdl-js-ripple-effect">
+                <router-link v-on:click.native="signOut()" to="/signin" class="mdl-navigation__link mdl-js-ripple-effect">
                     <div class="material-icons">home</div>
                     Sign Out
                 </router-link>
+                <a v-on:click="deleteAccount()" href="#" class="mdl-navigation__link mdl-js-ripple-effect">
+                    <div class="material-icons">delete</div>
+                  Delete Account
+                </a>
             </nav>
         </div>
     </div>
@@ -28,6 +32,21 @@
           'currentPage'
       ],
       methods: {
+        deleteAccount: function() {
+          let currentUser = firebase.auth().currentUser;
+          let db = firebase.firestore();
+          
+          firebase.auth().signOut();
+          currentUser.delete();
+
+          db.collection('messages').where('email', '==', currentUser.email).get().then(function(querySnapshot) {
+            querySnapshot.forEach(doc => {
+              db.collection('messages').doc(doc.id).delete().then(function() {
+              })
+            })
+          })
+          this.close();
+        },
         close: function() {
             document.getElementById('nav').MaterialLayout.toggleDrawer()
         },

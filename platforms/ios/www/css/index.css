@@ -79,6 +79,12 @@ div.button {
     float: left;
 }
 
+.mdl-list__item-secondary-content {
+    display: inline-block !important;
+}
+
+
+
 #chat button {
     margin-top: 20px;
     height: 63px;
@@ -107,7 +113,16 @@ div.button {
 
 .mdl-list__item-text-body {
     float: right;
+    width: 100%;
     color:white !important;
+}
+
+.actions {
+    margin-right: -110px;
+}
+
+#chat .material-icons {
+    color: #dedede;
 }
 
 .mdl-list {

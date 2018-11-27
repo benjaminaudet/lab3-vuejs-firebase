@@ -22,10 +22,6 @@
         v-bind:active="this.state.error"
         v-bind:message="this.state.message"
       ></errorBox>
-      <successBox 
-        v-bind:active="this.state.success"
-        v-bind:message="this.state.message"
-      ></successBox>
     </div>
     <back 
       v-bind:to="'/signup'"
@@ -39,13 +35,11 @@
   import firebase from 'firebase';
   import back from './back.vue';  
   import errorBox from './error-box.vue';
-  import successBox from './success-box.vue';
 
   export default {
     components: {
       back,
-      errorBox,
-      successBox
+      errorBox
     },
     methods: {
       signIn: function() {

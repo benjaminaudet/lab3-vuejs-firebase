@@ -14,10 +14,10 @@ import navigationElem from './navigationElements.js'
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: Signin },
+  { path: '/signin', component: Signin },
   { path: '/signup', component: Signup },
   { path: '/chat', component: Chat, meta: { requiresAuth: true } },
-  { path: '*', redirect: '/' }
+  { path: '*', redirect: '/signin' }
 ]
 
 const router = new VueRouter({
@@ -29,7 +29,7 @@ router.beforeEach((to, from, next) => {
   let requiresAuth = to.matched.some(record => record.meta.requiresAuth);
 
   if (requiresAuth && !currentUser) {
-    next('/')
+    next('/signin')
   } else {
     next();
   }
@@ -51,6 +51,8 @@ firestore.settings(settings);
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     router.push('chat');
+  } else {
+    router.push('signin');
   }
 });
 
