@@ -9,20 +9,33 @@
         {{message}}
       </span>
     </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    <span class="actions" v-if="isAuthor()">
+      <span class="mdl-list__item-secondary-content">
+        <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">edit</i></a>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+        <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">delete</i></a>
+      </span>
     </span>
   </li>
 </template>
 
 <script>
+  import firebase from 'firebase';
+
   export default {
     props: [
       'username',
+      'email',
       'message'
     ],
     methods: {
-
+      isAuthor: function() {
+        let currentUser = firebase.auth().currentUser;
+        console.log(this.email)
+        console.log(currentUser.email)
+        return this.email == currentUser.email;
+      }
     },
     data: () => {
       return {

@@ -5,6 +5,7 @@
         <message
           v-for="message in messages"
           v-bind:username="message.username"
+          v-bind:email="message.email"
           v-bind:message="message.message"
         ></message>
       </ul>

@@ -29,3 +29,39 @@ Open repository: /home/benjamin/Projets/lab3-vuejs-firebase
 > git show :www/js/chat.vue
 > git show :www/js/message.vue
 > git show :www/js/chat.vue
+> git show :www/js/chat.vue
+> git show :www/js/message.vue
+> git show :www/js/index.js
+> git check-ignore -z --stdin
+> git show :www/css/index.css
+> git check-ignore -z --stdin
+> git show :www/js/navigation.vue
+> git show :www/js/signin.vue
+> git show :www/js/navigation.vue
+> git show :www/js/message.vue
+> git show :www/js/signin.vue
+> git show :www/js/message.vue
+> git show :www/js/chat.vue
+> git show :www/js/message.vue
+> git show :www/js/chat.vue
+> git show :www/js/signin.vue
+> git show :www/js/chat.vue
+> git show :www/js/signin.vue
+> git show :www/js/message.vue
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/benjamin/Projets/phone-testing-center-vuejs
+> git status -z -u
+> git show :.gitignore
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :.gitignore
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin

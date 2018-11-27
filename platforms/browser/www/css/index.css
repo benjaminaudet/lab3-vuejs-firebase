@@ -71,6 +71,7 @@ div.button {
     width: 350px;
     margin-left: 50%;
     transform: translate(-50%, 0);
+    overflow-x: hidden;
 }
 
 #chat form {

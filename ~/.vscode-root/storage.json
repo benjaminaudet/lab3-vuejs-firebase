@@ -454,7 +454,7 @@
             "isNative": true
         }
     },
-    "pickerWorkingDir": "/home/benjamin/Projets",
+    "pickerWorkingDir": "/home/benjamin/Projets/phone-testing-center-vuejs",
     "openedPathsList": {
         "workspaces2": [
             "file:///home/benjamin/Projets/lab3-vuejs-firebase",
@@ -464,6 +464,7 @@
             "file:///home/benjamin/Projets/phone-testing-center"
         ],
         "files2": [
+            "file:///home/benjamin/Projets/phone-testing-center-vuejs/.gitignore",
             "file:///home/benjamin/Projets/phone-testing-center/www/css/index.css"
         ]
     },

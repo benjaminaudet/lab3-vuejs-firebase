@@ -10,36 +10,40 @@
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Pages</span>
             <nav class="mdl-navigation">
-                <div v-on:click="close" v-for="nav of navigation">
-                    <router-link :to="nav.url" class="mdl-navigation__link mdl-js-ripple-effect">
-                        <div class="material-icons">{{nav.icon}}</div>
-                        {{nav.label}}
-                    </router-link>
-                </div>
+                <router-link v-on:click.native="signOut() && close()" to="/#" class="mdl-navigation__link mdl-js-ripple-effect">
+                    <div class="material-icons">home</div>
+                    Sign Out
+                </router-link>
             </nav>
         </div>
     </div>
 </template>
 
 <script>
-    import firebase from 'firebase';
-    import navigation from './navigationElements.js';
+  import _ from 'underscore';
+  import firebase from 'firebase';
 
-    export default {
-        props: [
-            'currentPage'
-        ],
-        methods: {
-            close: function() {
-                document.getElementById('nav').MaterialLayout.toggleDrawer()
-            }
+  export default {
+      props: [
+          'currentPage'
+      ],
+      methods: {
+        close: function() {
+            document.getElementById('nav').MaterialLayout.toggleDrawer()
         },
-        data: function() {
-            return {
-                navigation: navigation
-            }
+        signOut: function() {
+          firebase.auth().signOut()
+            .then(_.bind(function() {
+              console.log('Signed Out !')
+              this.close();
+            }, this));
         }
-    }
+      },
+      data: function() {
+          return {
+          }
+      }
+  }
 </script>
 
 
